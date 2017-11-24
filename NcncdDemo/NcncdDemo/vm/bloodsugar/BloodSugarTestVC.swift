@@ -114,7 +114,7 @@ class BloodSugarTestVC: UIViewController , NcncdApiDelegate{
     @IBAction func actionUpload(_ sender: Any) {
         
         BloodSugarApi.delegate = self
-        BloodSugarApi.uploadBloodSugar(data: datas, telephone: "13889354554")
+        BloodSugarApi.uploadBloodSugar(data: datas, telephone: "18911442790")
     }
     
     /// 重置数据
