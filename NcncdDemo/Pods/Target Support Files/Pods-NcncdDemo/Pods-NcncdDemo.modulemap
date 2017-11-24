@@ -1,0 +1,6 @@
+framework module Pods_NcncdDemo {
+  umbrella header "Pods-NcncdDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

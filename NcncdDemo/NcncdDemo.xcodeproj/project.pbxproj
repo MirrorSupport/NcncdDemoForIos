@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		281389CD66177A7DBAAD87AA /* Pods_NcncdDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15349533FD893E7D06224EA9 /* Pods_NcncdDemo.framework */; };
+		DFA888001FC7CF7A009606F3 /* Ncncd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFA887FF1FC7CF7A009606F3 /* Ncncd.framework */; };
+		DFA888011FC7CF7A009606F3 /* Ncncd.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DFA887FF1FC7CF7A009606F3 /* Ncncd.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DFF767A71FBDA04600A8328C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF767A61FBDA04600A8328C /* AppDelegate.swift */; };
+		DFF767AC1FBDA04600A8328C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFF767AA1FBDA04600A8328C /* Main.storyboard */; };
+		DFF767AE1FBDA04600A8328C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFF767AD1FBDA04600A8328C /* Assets.xcassets */; };
+		DFF767B11FBDA04700A8328C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFF767AF1FBDA04700A8328C /* LaunchScreen.storyboard */; };
+		DFF767BE1FBDA2BF00A8328C /* IndexVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF767BD1FBDA2BF00A8328C /* IndexVC.swift */; };
+		DFF767C31FBE8F9900A8328C /* BloodSugarTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF767C21FBE8F9900A8328C /* BloodSugarTestVC.swift */; };
+		DFF767C61FBE954E00A8328C /* HealthTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF767C51FBE954E00A8328C /* HealthTestVC.swift */; };
+		DFF767C91FBEAA7600A8328C /* BloodPressureTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF767C81FBEAA7600A8328C /* BloodPressureTestVC.swift */; };
+		DFF767CC1FBEB6ED00A8328C /* SportTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF767CB1FBEB6ED00A8328C /* SportTestVC.swift */; };
+		DFF767CF1FBEBCB500A8328C /* SleepTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF767CE1FBEBCB500A8328C /* SleepTestVC.swift */; };
+		DFF767D21FBEC46500A8328C /* BloodOxygenTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF767D11FBEC46500A8328C /* BloodOxygenTestVC.swift */; };
+		DFF767D51FBEC62200A8328C /* HeartRateTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF767D41FBEC62200A8328C /* HeartRateTestVC.swift */; };
+		DFF767D81FBEC65100A8328C /* TemperatureTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF767D71FBEC65100A8328C /* TemperatureTestVC.swift */; };
+		DFF767DF1FBECDAD00A8328C /* ViewUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF767DE1FBECDAD00A8328C /* ViewUtil.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DFF767DC1FBECADA00A8328C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DFA888011FC7CF7A009606F3 /* Ncncd.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		15349533FD893E7D06224EA9 /* Pods_NcncdDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NcncdDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CB4961556A775C8AE0F48A2 /* Pods-NcncdDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NcncdDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NcncdDemo/Pods-NcncdDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		5F04AB7914E9B23C6DDE45E6 /* Pods-NcncdDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NcncdDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-NcncdDemo/Pods-NcncdDemo.release.xcconfig"; sourceTree = "<group>"; };
+		DFA887FF1FC7CF7A009606F3 /* Ncncd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Ncncd.framework; sourceTree = "<group>"; };
+		DFF767A31FBDA04600A8328C /* NcncdDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NcncdDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFF767A61FBDA04600A8328C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DFF767AB1FBDA04600A8328C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DFF767AD1FBDA04600A8328C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DFF767B01FBDA04700A8328C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DFF767B21FBDA04700A8328C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFF767B81FBDA1BB00A8328C /* NcncdDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NcncdDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		DFF767BD1FBDA2BF00A8328C /* IndexVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexVC.swift; sourceTree = "<group>"; };
+		DFF767C21FBE8F9900A8328C /* BloodSugarTestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodSugarTestVC.swift; sourceTree = "<group>"; };
+		DFF767C51FBE954E00A8328C /* HealthTestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthTestVC.swift; sourceTree = "<group>"; };
+		DFF767C81FBEAA7600A8328C /* BloodPressureTestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodPressureTestVC.swift; sourceTree = "<group>"; };
+		DFF767CB1FBEB6ED00A8328C /* SportTestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportTestVC.swift; sourceTree = "<group>"; };
+		DFF767CE1FBEBCB500A8328C /* SleepTestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepTestVC.swift; sourceTree = "<group>"; };
+		DFF767D11FBEC46500A8328C /* BloodOxygenTestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodOxygenTestVC.swift; sourceTree = "<group>"; };
+		DFF767D41FBEC62200A8328C /* HeartRateTestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateTestVC.swift; sourceTree = "<group>"; };
+		DFF767D71FBEC65100A8328C /* TemperatureTestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureTestVC.swift; sourceTree = "<group>"; };
+		DFF767DE1FBECDAD00A8328C /* ViewUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewUtil.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DFF767A01FBDA04600A8328C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				281389CD66177A7DBAAD87AA /* Pods_NcncdDemo.framework in Frameworks */,
+				DFA888001FC7CF7A009606F3 /* Ncncd.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A17021CB98AC71B49C08BAD0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				15349533FD893E7D06224EA9 /* Pods_NcncdDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DFF7679A1FBDA04600A8328C = {
+			isa = PBXGroup;
+			children = (
+				DFA887FF1FC7CF7A009606F3 /* Ncncd.framework */,
+				DFF767A51FBDA04600A8328C /* NcncdDemo */,
+				DFF767A41FBDA04600A8328C /* Products */,
+				E234FD2B6DC032F4937A3A84 /* Pods */,
+				A17021CB98AC71B49C08BAD0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DFF767A41FBDA04600A8328C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DFF767A31FBDA04600A8328C /* NcncdDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DFF767A51FBDA04600A8328C /* NcncdDemo */ = {
+			isa = PBXGroup;
+			children = (
+				DFF767DD1FBECD5E00A8328C /* utils */,
+				DFF767BC1FBDA20A00A8328C /* vm */,
+				DFF767A61FBDA04600A8328C /* AppDelegate.swift */,
+				DFF767AA1FBDA04600A8328C /* Main.storyboard */,
+				DFF767AD1FBDA04600A8328C /* Assets.xcassets */,
+				DFF767AF1FBDA04700A8328C /* LaunchScreen.storyboard */,
+				DFF767B21FBDA04700A8328C /* Info.plist */,
+				DFF767B81FBDA1BB00A8328C /* NcncdDemo-Bridging-Header.h */,
+			);
+			path = NcncdDemo;
+			sourceTree = "<group>";
+		};
+		DFF767BC1FBDA20A00A8328C /* vm */ = {
+			isa = PBXGroup;
+			children = (
+				DFF767D61FBEC63200A8328C /* temperature */,
+				DFF767D31FBEC60000A8328C /* heartrate */,
+				DFF767D01FBEC44E00A8328C /* bloodoxygen */,
+				DFF767CD1FBEBC9F00A8328C /* sleep */,
+				DFF767CA1FBEB6D400A8328C /* sport */,
+				DFF767C71FBEAA5500A8328C /* bloodpressure */,
+				DFF767C41FBE950600A8328C /* health */,
+				DFF767BF1FBE817000A8328C /* bloodsugar */,
+				DFF767BD1FBDA2BF00A8328C /* IndexVC.swift */,
+			);
+			path = vm;
+			sourceTree = "<group>";
+		};
+		DFF767BF1FBE817000A8328C /* bloodsugar */ = {
+			isa = PBXGroup;
+			children = (
+				DFF767C21FBE8F9900A8328C /* BloodSugarTestVC.swift */,
+			);
+			path = bloodsugar;
+			sourceTree = "<group>";
+		};
+		DFF767C41FBE950600A8328C /* health */ = {
+			isa = PBXGroup;
+			children = (
+				DFF767C51FBE954E00A8328C /* HealthTestVC.swift */,
+			);
+			path = health;
+			sourceTree = "<group>";
+		};
+		DFF767C71FBEAA5500A8328C /* bloodpressure */ = {
+			isa = PBXGroup;
+			children = (
+				DFF767C81FBEAA7600A8328C /* BloodPressureTestVC.swift */,
+			);
+			path = bloodpressure;
+			sourceTree = "<group>";
+		};
+		DFF767CA1FBEB6D400A8328C /* sport */ = {
+			isa = PBXGroup;
+			children = (
+				DFF767CB1FBEB6ED00A8328C /* SportTestVC.swift */,
+			);
+			path = sport;
+			sourceTree = "<group>";
+		};
+		DFF767CD1FBEBC9F00A8328C /* sleep */ = {
+			isa = PBXGroup;
+			children = (
+				DFF767CE1FBEBCB500A8328C /* SleepTestVC.swift */,
+			);
+			path = sleep;
+			sourceTree = "<group>";
+		};
+		DFF767D01FBEC44E00A8328C /* bloodoxygen */ = {
+			isa = PBXGroup;
+			children = (
+				DFF767D11FBEC46500A8328C /* BloodOxygenTestVC.swift */,
+			);
+			path = bloodoxygen;
+			sourceTree = "<group>";
+		};
+		DFF767D31FBEC60000A8328C /* heartrate */ = {
+			isa = PBXGroup;
+			children = (
+				DFF767D41FBEC62200A8328C /* HeartRateTestVC.swift */,
+			);
+			path = heartrate;
+			sourceTree = "<group>";
+		};
+		DFF767D61FBEC63200A8328C /* temperature */ = {
+			isa = PBXGroup;
+			children = (
+				DFF767D71FBEC65100A8328C /* TemperatureTestVC.swift */,
+			);
+			path = temperature;
+			sourceTree = "<group>";
+		};
+		DFF767DD1FBECD5E00A8328C /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				DFF767DE1FBECDAD00A8328C /* ViewUtil.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		E234FD2B6DC032F4937A3A84 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4CB4961556A775C8AE0F48A2 /* Pods-NcncdDemo.debug.xcconfig */,
+				5F04AB7914E9B23C6DDE45E6 /* Pods-NcncdDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DFF767A21FBDA04600A8328C /* NcncdDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFF767B51FBDA04700A8328C /* Build configuration list for PBXNativeTarget "NcncdDemo" */;
+			buildPhases = (
+				1429EE8F620FDC6AA5520F8D /* [CP] Check Pods Manifest.lock */,
+				DFF7679F1FBDA04600A8328C /* Sources */,
+				DFF767A01FBDA04600A8328C /* Frameworks */,
+				DFF767A11FBDA04600A8328C /* Resources */,
+				8DCAC2180DA3DFE725C55439 /* [CP] Embed Pods Frameworks */,
+				21154554AA37C2241BAAC785 /* [CP] Copy Pods Resources */,
+				DFF767DC1FBECADA00A8328C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NcncdDemo;
+			productName = NcncdDemo;
+			productReference = DFF767A31FBDA04600A8328C /* NcncdDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DFF7679B1FBDA04600A8328C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = miao;
+				TargetAttributes = {
+					DFF767A21FBDA04600A8328C = {
+						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = DFF7679E1FBDA04600A8328C /* Build configuration list for PBXProject "NcncdDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DFF7679A1FBDA04600A8328C;
+			productRefGroup = DFF767A41FBDA04600A8328C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DFF767A21FBDA04600A8328C /* NcncdDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DFF767A11FBDA04600A8328C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFF767B11FBDA04700A8328C /* LaunchScreen.storyboard in Resources */,
+				DFF767AE1FBDA04600A8328C /* Assets.xcassets in Resources */,
+				DFF767AC1FBDA04600A8328C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1429EE8F620FDC6AA5520F8D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		21154554AA37C2241BAAC785 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NcncdDemo/Pods-NcncdDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DCAC2180DA3DFE725C55439 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NcncdDemo/Pods-NcncdDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DFF7679F1FBDA04600A8328C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFF767C61FBE954E00A8328C /* HealthTestVC.swift in Sources */,
+				DFF767CC1FBEB6ED00A8328C /* SportTestVC.swift in Sources */,
+				DFF767DF1FBECDAD00A8328C /* ViewUtil.swift in Sources */,
+				DFF767C31FBE8F9900A8328C /* BloodSugarTestVC.swift in Sources */,
+				DFF767CF1FBEBCB500A8328C /* SleepTestVC.swift in Sources */,
+				DFF767A71FBDA04600A8328C /* AppDelegate.swift in Sources */,
+				DFF767D21FBEC46500A8328C /* BloodOxygenTestVC.swift in Sources */,
+				DFF767C91FBEAA7600A8328C /* BloodPressureTestVC.swift in Sources */,
+				DFF767D81FBEC65100A8328C /* TemperatureTestVC.swift in Sources */,
+				DFF767D51FBEC62200A8328C /* HeartRateTestVC.swift in Sources */,
+				DFF767BE1FBDA2BF00A8328C /* IndexVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DFF767AA1FBDA04600A8328C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFF767AB1FBDA04600A8328C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DFF767AF1FBDA04700A8328C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFF767B01FBDA04700A8328C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DFF767B31FBDA04700A8328C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DFF767B41FBDA04700A8328C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DFF767B61FBDA04700A8328C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CB4961556A775C8AE0F48A2 /* Pods-NcncdDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TT7AU6QPA2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = NcncdDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.miao.ncncd.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NcncdDemo/NcncdDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DFF767B71FBDA04700A8328C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F04AB7914E9B23C6DDE45E6 /* Pods-NcncdDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TT7AU6QPA2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = NcncdDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.miao.ncncd.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NcncdDemo/NcncdDemo-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DFF7679E1FBDA04600A8328C /* Build configuration list for PBXProject "NcncdDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFF767B31FBDA04700A8328C /* Debug */,
+				DFF767B41FBDA04700A8328C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFF767B51FBDA04700A8328C /* Build configuration list for PBXNativeTarget "NcncdDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFF767B61FBDA04700A8328C /* Debug */,
+				DFF767B71FBDA04700A8328C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DFF7679B1FBDA04600A8328C /* Project object */;
+}
