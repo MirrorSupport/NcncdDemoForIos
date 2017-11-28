@@ -43,8 +43,7 @@ class IndexVC: UITableViewController {
             
         }else{
             
-            let bundle = Bundle(identifier: "cn.miao.ncncd")
-            let registerVC = NcncdRegisterVC.init(nibName: "NcncdRegisterVC", bundle: bundle)
+            let registerVC = NcncdRegisterVC(nibName: "NcncdBundle.bundle/NcncdRegisterVC", bundle: nil)
             self.navigationController?.pushViewController(registerVC, animated: true)
         }
         

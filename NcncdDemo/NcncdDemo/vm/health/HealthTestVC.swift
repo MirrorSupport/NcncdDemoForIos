@@ -138,6 +138,8 @@ class HealthTestVC: UIViewController, NcncdApiDelegate {
         health.bmr = bmr
         health.sampleTime = Int(Date().timeIntervalSince1970)
         
+        datas.append(health)
+        
         var text = "bmi指数：\(bmi) , 体脂率：\(bodyFat) , 肌肉率：\(muscleRate) , 水分：\(moistureRate) , 骨密度：\(bmd) , 基础代谢率：\(bmr)"
         if !textView.text.isEmpty {
             

@@ -134,7 +134,7 @@ class HeartRateTestVC: UIViewController, NcncdApiDelegate {
     @IBAction func actionUpload(_ sender: Any) {
         
         HeartRateApi.delegate = self
-        HeartRateApi.uploadHeartRate(data: datas, telephone: "13645787776")
+        HeartRateApi.uploadHeartRate(data: datas, telephone: "18911442790")
     }
     
     /// 重置数据
