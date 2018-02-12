@@ -20,4 +20,3 @@ FOUNDATION_EXPORT const unsigned char NcncdVersionString[];
 
 #import <AFNetworking/AFNetworking.h>
 #import <MJExtension/MJExtension.h>
-#import <MBProgressHUD/MBProgressHUD.h>

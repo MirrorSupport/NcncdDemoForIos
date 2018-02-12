@@ -821,5 +821,27 @@ SWIFT_CLASS("_TtC5Ncncd14TemperatureApi")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS("_TtC5Ncncd4User")
+@interface User : NSObject
+@property (nonatomic) NSInteger sex;
+@property (nonatomic) float weight;
+@property (nonatomic) NSInteger height;
+@property (nonatomic, copy) NSString * _Nonnull birthday;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC5Ncncd7UserApi")
+@interface UserApi : NSObject
+/// 上次用户信息
+/// \param data 用户数据
+///
+/// \param telephone 电话
+///
++ (void)uploadUserWithData:(User * _Nonnull)data telephone:(NSString * _Nonnull)telephone;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 SWIFT_MODULE_NAMESPACE_POP
 #pragma clang diagnostic pop

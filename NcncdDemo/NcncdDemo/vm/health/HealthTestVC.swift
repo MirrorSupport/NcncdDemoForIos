@@ -8,6 +8,7 @@
 
 import UIKit
 import Ncncd
+import MBProgressHUD
 
 class HealthTestVC: UIViewController, NcncdApiDelegate {
     

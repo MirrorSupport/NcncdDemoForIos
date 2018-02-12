@@ -8,6 +8,7 @@
 
 import UIKit
 import Ncncd
+import MBProgressHUD
 
 class SleepTestVC: UIViewController, NcncdApiDelegate {
     

@@ -8,10 +8,11 @@
 
 import UIKit
 import Ncncd
+import MBProgressHUD
 
 class IndexVC: UITableViewController, NcncdApiDelegate {
     
-    let tabelTitles = ["上传血糖数据","上传健康数据","上传血压数据","上传运动数据","上传睡眠数据","上传血氧数据","上传心率数据","上传体温数据","上传用户数据","上传视力数据","上传胆固醇数据","上传内分泌数据","上传心脑血管数据","上传消化系统数据","上传呼吸系统数据","上传骨骼系统数据","上传免疫数据","上传男性生殖系统数据","上传女性生殖系统数据","上传营养状态数据","上传有害物质数据","上传皮肤数据"]
+    let tabelTitles = ["上传血糖数据","上传健康数据","上传血压数据","上传运动数据","上传睡眠数据","上传血氧数据","上传心率数据","上传体温数据","上传用户数据With View","上传用户数据","上传视力数据","上传胆固醇数据","上传内分泌数据","上传心脑血管数据","上传消化系统数据","上传呼吸系统数据","上传骨骼系统数据","上传免疫数据","上传男性生殖系统数据","上传女性生殖系统数据","上传营养状态数据","上传有害物质数据","上传皮肤数据"]
     
     let vcIdentifiers = ["BloodSugarTestVC", "HealthTestVC", "BloodPressureTestVC", "SportTestVC", "SleepTestVC", "BloodOxygenTestVC", "HeartRateTestVC", "TemperatureTestVC"]
     
@@ -40,21 +41,31 @@ class IndexVC: UITableViewController, NcncdApiDelegate {
         
         tableView.deselectRow(at: indexPath, animated: false)
         
-        if indexPath.row == 8 {
+        if indexPath.row < 8 {
             
-            let bloodSugarTestVC = self.storyboard?.instantiateViewController(withIdentifier: self.vcIdentifiers[indexPath.row])
-            self.navigationController?.pushViewController(bloodSugarTestVC!, animated: true)
+            let apiVc = self.storyboard?.instantiateViewController(withIdentifier: self.vcIdentifiers[indexPath.row])
+            self.navigationController?.pushViewController(apiVc!, animated: true)
             
-        }else if indexPath.row < 8{
-            
-            let registerVC = NcncdRegisterVC(nibName: "NcncdBundle.bundle/NcncdRegisterVC", bundle: nil)
-            self.navigationController?.pushViewController(registerVC, animated: true)
-            
-        }else{
+        } else {
             
             switch indexPath.row{
                 
+            case 8:
+                
+                UserApi.delegate = self
+                
+                let registerVC = NcncdRegisterVC(nibName: "NcncdBundle.bundle/NcncdRegisterVC", bundle: nil)
+                self.navigationController?.pushViewController(registerVC, animated: true)
+                
             case 9:
+                
+                let user = User()
+                user.birthday = "1990-11-11"
+                
+                UserApi.delegate = self
+                UserApi.uploadUser(data: user, telephone: "13889353663")
+                
+            case 10:
                 
                 let eyesight = Eyesight()
                 eyesight.sampleTime = Int(Date().timeIntervalSince1970)
@@ -64,7 +75,7 @@ class IndexVC: UITableViewController, NcncdApiDelegate {
                 EyesightApi.delegate = self
                 EyesightApi.uploadEyesight(data: [eyesight], telephone: "13889363773")
                 
-            case 10:
+            case 11:
                 
                 let cholesterol = Cholesterol()
                 cholesterol.sampleTime = Int(Date().timeIntervalSince1970)
@@ -77,7 +88,7 @@ class IndexVC: UITableViewController, NcncdApiDelegate {
                 CholesterolApi.delegate = self
                 CholesterolApi.uploadCholesterol(data: [cholesterol], telephone: "13889363773")
                 
-            case 11:
+            case 12:
                 
                 let endocrine = Endocrine()
                 endocrine.sampleTime = Int(Date().timeIntervalSince1970)
@@ -89,7 +100,7 @@ class IndexVC: UITableViewController, NcncdApiDelegate {
                 EndocrineApi.delegate = self
                 EndocrineApi.uploadEndocrine(data: [endocrine], telephone: "13889363773")
                 
-            case 12:
+            case 13:
                 
                 let cardiovascular = Cardiovascular()
                 cardiovascular.sampleTime = Int(Date().timeIntervalSince1970)
@@ -109,7 +120,7 @@ class IndexVC: UITableViewController, NcncdApiDelegate {
                 CardiovascularApi.delegate = self
                 CardiovascularApi.uploadCardiovascular(data: [cardiovascular], telephone: "13889363773")
                 
-            case 13:
+            case 14:
                 
                 let digestive = Digestive()
                 digestive.sampleTime = Int(Date().timeIntervalSince1970)
@@ -124,7 +135,7 @@ class IndexVC: UITableViewController, NcncdApiDelegate {
                 DigestiveApi.delegate = self
                 DigestiveApi.uploadDigestive(data: [digestive], telephone: "13889363773")
                 
-            case 14:
+            case 15:
                 
                 let respiratory = Respiratory()
                 respiratory.sampleTime = Int(Date().timeIntervalSince1970)
@@ -134,7 +145,7 @@ class IndexVC: UITableViewController, NcncdApiDelegate {
                 RespiratoryApi.delegate = self
                 RespiratoryApi.uploadRespiratory(data: [respiratory], telephone: "13889363773")
                 
-            case 15:
+            case 16:
                 
                 let skeletal = Skeletal()
                 skeletal.sampleTime = Int(Date().timeIntervalSince1970)
@@ -152,7 +163,7 @@ class IndexVC: UITableViewController, NcncdApiDelegate {
                 SkeletalApi.delegate = self
                 SkeletalApi.uploadSkeletal(data: [skeletal], telephone: "13889363773")
                 
-            case 16:
+            case 17:
                 
                 let immune = Immune()
                 immune.sampleTime = Int(Date().timeIntervalSince1970)
@@ -166,7 +177,7 @@ class IndexVC: UITableViewController, NcncdApiDelegate {
                 ImmuneApi.delegate = self
                 ImmuneApi.uploadImmune(data: [immune], telephone: "13889363773")
                 
-            case 17:
+            case 18:
                 
                 let maleReproductive = MaleReproductive()
                 maleReproductive.sampleTime = Int(Date().timeIntervalSince1970)
@@ -180,7 +191,7 @@ class IndexVC: UITableViewController, NcncdApiDelegate {
                 MaleReproductiveApi.delegate = self
                 MaleReproductiveApi.uploadMaleReproductive(data: [maleReproductive], telephone: "13889363773")
                 
-            case 18:
+            case 19:
                 
                 let femaleReproductive = FemaleReproductive()
                 femaleReproductive.sampleTime = Int(Date().timeIntervalSince1970)
@@ -191,7 +202,7 @@ class IndexVC: UITableViewController, NcncdApiDelegate {
                 FemaleReproductiveApi.delegate = self
                 FemaleReproductiveApi.uploadFemaleReproductive(data: [femaleReproductive], telephone: "13889363773")
                 
-            case 19:
+            case 20:
                 
                 let nutritional = Nutritional()
                 nutritional.sampleTime = Int(Date().timeIntervalSince1970)
@@ -216,7 +227,7 @@ class IndexVC: UITableViewController, NcncdApiDelegate {
                 NutritionalApi.delegate = self
                 NutritionalApi.uploadNutritional(data: [nutritional], telephone: "13889363773")
                 
-            case 20:
+            case 21:
                 
                 let harmfulSubstances = HarmfulSubstances()
                 harmfulSubstances.sampleTime = Int(Date().timeIntervalSince1970)
@@ -230,7 +241,7 @@ class IndexVC: UITableViewController, NcncdApiDelegate {
                 HarmfulSubstancesApi.delegate = self
                 HarmfulSubstancesApi.uploadHarmfulSubstances(data: [harmfulSubstances], telephone: "13889363773")
                 
-            case 21:
+            case 22:
                 
                 let skin = Skin()
                 skin.sampleTime = Int(Date().timeIntervalSince1970)
