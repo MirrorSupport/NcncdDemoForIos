@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		281389CD66177A7DBAAD87AA /* Pods_NcncdDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15349533FD893E7D06224EA9 /* Pods_NcncdDemo.framework */; };
-		DFB7D7E920313E9D00CF6410 /* Ncncd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB7D7E720313E9D00CF6410 /* Ncncd.framework */; };
+		DF17FB8D20720D5E009C6D39 /* Ncncd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF17FB8C20720D5E009C6D39 /* Ncncd.framework */; };
 		DFB7D7EA20313E9D00CF6410 /* NcncdBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DFB7D7E820313E9D00CF6410 /* NcncdBundle.bundle */; };
 		DFF767A71FBDA04600A8328C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF767A61FBDA04600A8328C /* AppDelegate.swift */; };
 		DFF767AC1FBDA04600A8328C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFF767AA1FBDA04600A8328C /* Main.storyboard */; };
@@ -43,7 +43,7 @@
 		15349533FD893E7D06224EA9 /* Pods_NcncdDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NcncdDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CB4961556A775C8AE0F48A2 /* Pods-NcncdDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NcncdDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NcncdDemo/Pods-NcncdDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		5F04AB7914E9B23C6DDE45E6 /* Pods-NcncdDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NcncdDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-NcncdDemo/Pods-NcncdDemo.release.xcconfig"; sourceTree = "<group>"; };
-		DFB7D7E720313E9D00CF6410 /* Ncncd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Ncncd.framework; sourceTree = "<group>"; };
+		DF17FB8C20720D5E009C6D39 /* Ncncd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Ncncd.framework; sourceTree = "<group>"; };
 		DFB7D7E820313E9D00CF6410 /* NcncdBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = NcncdBundle.bundle; sourceTree = "<group>"; };
 		DFF767A31FBDA04600A8328C /* NcncdDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NcncdDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFF767A61FBDA04600A8328C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -70,7 +70,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				281389CD66177A7DBAAD87AA /* Pods_NcncdDemo.framework in Frameworks */,
-				DFB7D7E920313E9D00CF6410 /* Ncncd.framework in Frameworks */,
+				DF17FB8D20720D5E009C6D39 /* Ncncd.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +88,7 @@
 		DFF7679A1FBDA04600A8328C = {
 			isa = PBXGroup;
 			children = (
-				DFB7D7E720313E9D00CF6410 /* Ncncd.framework */,
+				DF17FB8C20720D5E009C6D39 /* Ncncd.framework */,
 				DFB7D7E820313E9D00CF6410 /* NcncdBundle.bundle */,
 				DFF767A51FBDA04600A8328C /* NcncdDemo */,
 				DFF767A41FBDA04600A8328C /* Products */,
