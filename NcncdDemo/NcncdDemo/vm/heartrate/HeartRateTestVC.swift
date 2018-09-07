@@ -93,6 +93,7 @@ class HeartRateTestVC: UIViewController, NcncdApiDelegate {
     func addData(average: Float, max: Float, min: Float, time: Int) {
         
         let hearRate = HeartRate()
+        hearRate.deviceNo = "DeviceNo"
         hearRate.average = average
         hearRate.max = max
         hearRate.min = min

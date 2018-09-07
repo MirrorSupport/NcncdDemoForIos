@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         NcncdConfigure.initConfigure(appKey: "a1", appSecret: "a1")
+//        NcncdConfigure.initConfigure(appKey: <#T##String#>, appSecret: <#T##String#>, httpApi: <#T##String#>, deviceNo: <#T##String#>)
         
         return true
     }
