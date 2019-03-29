@@ -18,8 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        NcncdConfigure.initConfigure(appKey: "a1", appSecret: "a1")
-//        NcncdConfigure.initConfigure(appKey: <#T##String#>, appSecret: <#T##String#>, httpApi: <#T##String#>, deviceNo: <#T##String#>)
+//        NcncdConfigure.initConfigure(appKey: "a1", appSecret: "a1")
+        NcncdConfigure.initConfigure(appKey: "5a42f12725c5fbf7352c30894931b1e7", appSecret: "69c1067a91fec0c52ea2306cd6be0c20", httpApi: "http://hdi.miaohealth.net", deviceNo: "12344321")
         
         return true
     }

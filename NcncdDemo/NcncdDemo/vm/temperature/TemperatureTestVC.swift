@@ -97,6 +97,7 @@ class TemperatureTestVC: UIViewController, NcncdApiDelegate {
         temperature.average = average
         temperature.max = max
         temperature.min = min
+        temperature.deviceNo = "12331";
         temperature.beginTime = Int(Date().timeIntervalSince1970) - time
         temperature.endTime = Int(Date().timeIntervalSince1970)
         
